@@ -13,7 +13,7 @@ if (isset($_POST['submit']))
 		$description = htmlspecialchars($_POST['description']);
 		$id_utilisateur = $_SESSION['id'];
 		
-		var_dump($id_utilisateur);
+		//var_dump($id_utilisateur);
 
 		$titrelenght = strlen($titre);
 	
@@ -30,7 +30,7 @@ if (isset($_POST['submit']))
 			$insert = $bdd->prepare("INSERT INTO reservations(titre, description, debut, fin,id_utilisateur) VALUES (?,?,?,?,?)");
 			$insert->execute(array($titre, $description, $debut, $fin, $id_utilisateur));
 
-			var_dump($insert);
+			//var_dump($insert);
 
 			$erreur = "votre reservation a été prise en compte!";
 		}

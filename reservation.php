@@ -48,8 +48,8 @@ $bdd = new PDO('mysql:host=localhost;dbname=reservationsalles;charset=utf8', 'ro
             
               $m = $desc->fetch();
  
-              var_dump($desc);
-              var_dump($m);
+              //var_dump($desc);
+              //var_dump($m);
 
          ?>
 
