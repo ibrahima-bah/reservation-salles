@@ -1,5 +1,5 @@
 <?php session_start();
-$connect = mysqli_connect('localhost', 'root', 'root','reservationsalles');
+$connect = mysqli_connect('localhost', 'root', '','reservationsalles');
 ?>
 
 <!DOCTYPE html>
