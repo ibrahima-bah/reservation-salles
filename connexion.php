@@ -1,7 +1,7 @@
 <?php 
 session_start();
 
-$bdd = new PDO('mysql:host=localhost;dbname=reservationsalles;charset=utf8', '', 'root');
+$bdd = new PDO('mysql:host=localhost;dbname=reservationsalles;charset=utf8', 'root', '');
 
 
 if (isset($_POST['submit']))
